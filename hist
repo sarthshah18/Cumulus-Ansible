@@ -1,0 +1,91 @@
+    1  find / -name python*
+    2  exit
+    3  apt-get --purge remove ansible
+    4  ansible --version
+    5  ansible-playbook deploy_mlag_2SW.yml 
+    6  ansible-playbook deploy_mlag_2SW.yml 
+    7  vi hosts 
+    8  ansible-playbook deploy_mlag_2SW.yml 
+    9  vi deploy_mlag_2SW.
+   10  vi deploy_mlag_2SW.yml 
+   11  cd inventory/leaf01/
+   12  ls
+   13  mv Quagga.conf frr.conf
+   14  cd ../
+   15  ls
+   16  cd leaf02/
+   17  ls
+   18  mv Quagga.conf frr.conf
+   19  ls
+   20  cd ../
+   21  ls leaf01/frr.conf 
+   22  cd ../
+   23  ls
+   24  ansible-playbook deploy_mlag_2SW.yml 
+   25  vi deploy_mlag_2SW.yml 
+   26  vi hosts 
+   27  ansible-playbook deploy_mlag_2SW.yml 
+   28  ping 192.168.0.12
+   29  ping 192.168.0.11
+   30  ping 192.168.0.31
+   31  ping 192.168.0.32
+   32  ansible-playbook deploy_mlag_2SW.yml 
+   33  vi deploy_mlag_2SW.yml 
+   34  vi hosts 
+   35  ansible-playbook deploy_mlag_2SW.yml 
+   36  vi deploy_mlag_2SW.yml 
+   37  vi deploy_mlag_2SW.yml 
+   38  cp deploy_mlag_2SW.yml deploy-2Server.yml
+   39  ls
+   40  ls -lrt 
+   41  ansible-playbook deploy-2Server.yml 
+   42  vi deploy-2Server.
+   43  vi deploy-2Server.retry 
+   44  vi deploy-2Server.yml
+   45  ansible-playbook deploy-2Server.yml 
+   46  ansible-playbook deploy-2Server.yml > server-logs
+   47  vi server-logs 
+   48  s
+   49  ls
+   50  cd inventory/
+   51  ls
+   52  mv server-01 server01
+   53  mv server-02 server02 
+   54  cd ../
+   55  ls
+   56  ansible-playbook deploy-2Server.yml > server-logs-1
+   57  vi server-logs-1 
+   58  ansible-playbook deploy-2Server.yml > server-logs-2
+   59  vi server-logs-2 
+   60  vi deploy-2Server.yml 
+   61  vi deploy-2Server.yml 
+   62  vi hosts 
+   63  cp hosts hosts-orig
+   64  vi hosts
+   65  ansible-playbook deploy-2Server.yml 
+   66  cp hosts-orig hosts
+   67  vi hosts
+   68  ansible-playbook deploy-2Server.yml 
+   69  pwd
+   70  pwd
+   71  ls
+   72  rm -rf server-logs*
+   73  ls
+   74  vi hosts-orig 
+   75  rm -f hosts
+   76  mv hosts-orig hosts
+   77  ls
+   78  vi hosts 
+   79  vi deploy_mlag_2SW.yml 
+   80  pwd
+   81  ls
+   82  vi hosts 
+   83  vi hosts 
+   84  pwd
+   85  ls
+   86  vi hosts 
+   87  pwd
+   88  ls
+   89  ansible --version
+   90  history | more
+   91  history > hist
